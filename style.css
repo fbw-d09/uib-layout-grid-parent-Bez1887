@@ -1,4 +1,16 @@
 img {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+.container,
+.container2 {
+  display: grid;
+  padding: 15px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 15px;
+  gap: 20px;
+}
+
+.container2 {
+  grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
+}
